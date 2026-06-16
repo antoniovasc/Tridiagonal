@@ -1,0 +1,19 @@
+\begin{table}
+\caption{Numerical errors for \texttt{rkpw} and \texttt{invbi} on the tridiagonal matrix $M$ with zeros on the diagonal and ones on the off-diagonal.}
+\label{tab:errors}
+\begin{tabular}{rlccc}
+\toprule
+$n$ & Method & $\varepsilon_d$ & $\varepsilon_{\mathrm{off}}$ & $\varepsilon_t$ \\
+\midrule
+10 & RKPW & $2.22 \times 10^{-15}$ & $8.88 \times 10^{-16}$ & $1.20 \times 10^{-14}$ \\
+10 & INVBI_Cramer & $5.11 \times 10^{-15}$ & $2.66 \times 10^{-15}$ & $2.12 \times 10^{-14}$ \\
+10 & INVBI_Gauss & $1.78 \times 10^{-15}$ & $1.11 \times 10^{-15}$ & $1.23 \times 10^{-14}$ \\
+50 & RKPW & $1.70 \times 10^{-14}$ & $1.02 \times 10^{-14}$ & $2.27 \times 10^{-13}$ \\
+50 & INVBI_Cramer & $4.22 \times 10^{-13}$ & $2.40 \times 10^{-13}$ & $2.94 \times 10^{-12}$ \\
+50 & INVBI_Gauss & $4.16 \times 10^{-15}$ & $3.77 \times 10^{-15}$ & $9.26 \times 10^{-14}$ \\
+100 & RKPW & $4.84 \times 10^{-14}$ & $2.00 \times 10^{-14}$ & $8.94 \times 10^{-13}$ \\
+100 & INVBI_Cramer & $7.40 \times 10^{-13}$ & $9.28 \times 10^{-13}$ & $1.28 \times 10^{-11}$ \\
+100 & INVBI_Gauss & $1.07 \times 10^{-14}$ & $4.00 \times 10^{-15}$ & $2.99 \times 10^{-13}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
